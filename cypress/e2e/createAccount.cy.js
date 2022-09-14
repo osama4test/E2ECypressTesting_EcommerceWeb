@@ -49,7 +49,19 @@ describe('Creating Account', () => {
     
     loginPage.signIn()
     
-    signupPage.fillSignupEmail(this.data.updateEmail)
+    // signupPage.fillSignupEmail(this.data.updateEmail)//same work going on down with dynamic email address
+    function generateNewUsername() {
+      let text = "";
+      let alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz"
+      
+      for (let i = 0; i < 10; i++)
+      text += alphabet.charAt(Math.floor(Math.random() * alphabet.length))
+      return text;
+      
+      }
+      const generatedUsername = generateNewUsername()
+      cy.get('#email_create').type(generatedUsername + '@example.com')
+      cy.get('#SubmitCreate > span').click().wait(7000)
    
     signupPage.createAcntBtn()
     cy.wait(7000)
