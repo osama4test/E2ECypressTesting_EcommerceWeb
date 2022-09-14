@@ -1,0 +1,22 @@
+{
+    "existingSignupEmail": "a@a.com",
+    "updateEmail":"f21909@f23232.com",
+    "firstName":"Automation",
+    "lastName":"Tester",
+    "password":"CyAutomate123",
+    "days":"25",
+    "month":"July",
+    "year":"2012",
+    "company":"abc",
+    "address":"xyz",
+    "city":"Karachi",
+    "state":"Ohio",
+    "postalCode":"12345",
+    "country":"United States",
+    "additionalInfo":"qwert",
+    "phoneNo":"123456789",
+    "mobileNo":"987654321",
+    "addressAlias":"abc_address"
+    
+
+}
